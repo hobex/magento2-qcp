@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6400648ed14e7e5a2cf3b9630ba580f5",
+    "content-hash": "a2d0d46eed15e9c29b9d516716dfce03",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -555,16 +555,16 @@
         },
         {
             "name": "qenta/checkout-client-library",
-            "version": "5.0.9",
+            "version": "5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hobex/checkout-client-library.git",
-                "reference": "bc2a51afcfa379fe94e78c2ec2279409b281c855"
+                "reference": "09b99f02755578e362a4f20d1cc9fcac4225c8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hobex/checkout-client-library/zipball/bc2a51afcfa379fe94e78c2ec2279409b281c855",
-                "reference": "bc2a51afcfa379fe94e78c2ec2279409b281c855",
+                "url": "https://api.github.com/repos/hobex/checkout-client-library/zipball/09b99f02755578e362a4f20d1cc9fcac4225c8db",
+                "reference": "09b99f02755578e362a4f20d1cc9fcac4225c8db",
                 "shasum": ""
             },
             "require": {
@@ -598,9 +598,9 @@
                 "docs": "https://guides.hobex.at",
                 "email": "integration@hobex.at",
                 "issues": "https://github.com/hobex/checkout-client-library/issues",
-                "source": "https://github.com/hobex/checkout-client-library/tree/5.0.9"
+                "source": "https://github.com/hobex/checkout-client-library/tree/5.0.10"
             },
-            "time": "2025-09-01T10:46:50+00:00"
+            "time": "2025-12-10T12:54:58+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
