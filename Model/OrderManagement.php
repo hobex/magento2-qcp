@@ -48,11 +48,6 @@ class OrderManagement
     protected $_transactionBuilder;
 
     /**
-     * @var \Magento\Sales\Model\Order\Email\Sender\OrderSender;
-     */
-    protected $_orderSender;
-
-    /**
      * @var \Magento\Sales\Model\Order\Payment\Transaction\Repository
      */
     protected $_transactionRepository;
@@ -88,7 +83,6 @@ class OrderManagement
         \Psr\Log\LoggerInterface $logger,
         \Qenta\CheckoutPage\Helper\Data $helper,
         \Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface $transactionBuilder,
-        \Magento\Sales\Model\Order\Email\Sender\OrderSender $orderSender,
         \Magento\Sales\Api\TransactionRepositoryInterface $transactionRepository,
         \Magento\Quote\Api\CartManagementInterface $quoteManagement,
         \Magento\Quote\Api\CartRepositoryInterface $quoteRepository,
@@ -97,7 +91,6 @@ class OrderManagement
         $this->_logger                = $logger;
         $this->_dataHelper            = $helper;
         $this->_transactionRepository = $transactionRepository;
-        $this->_orderSender           = $orderSender;
         $this->_transactionBuilder    = $transactionBuilder;
         $this->_quoteManagement       = $quoteManagement;
         $this->_objectManager         = $objectManager;
@@ -388,7 +381,6 @@ class OrderManagement
                     $order->addRelatedObject($invoice);
                 }
 
-                $this->_orderSender->send($order);
             }
 
             $type = $doCapture ? Transaction::TYPE_CAPTURE : Transaction::TYPE_AUTH;
